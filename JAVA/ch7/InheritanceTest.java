@@ -1,6 +1,6 @@
 package JAVA.ch7;
 
-class MyPoint { // 상속을 하지 않으면 extends Object가 컴파일러에 의해 추가됨
+class MyPoint2 { // 상속을 하지 않으면 extends Object가 컴파일러에 의해 추가됨
     int x;
     int y;
 }
@@ -10,7 +10,7 @@ class MyPoint { // 상속을 하지 않으면 extends Object가 컴파일러에 의해 추가됨
 // }
 
 class Circle { // 포함
-    MyPoint p = new MyPoint();
+    MyPoint2 p = new MyPoint2();
     int r;
 }
 
