@@ -1,6 +1,6 @@
 package JAVA.ch7;
 
-class MyPoint {
+class MyPoint { // 상속을 하지 않으면 extends Object가 컴파일러에 의해 추가됨
     int x;
     int y;
 }
@@ -24,5 +24,9 @@ public class InheritanceTest {
         System.out.println("c.p.x = " + c.p.x);
         System.out.println("c.p.y = " + c.p.y);
         System.out.println("c.r = " + c.r);
+        System.out.println(c.toString()); // JAVA.ch7.Circle@5b2133b1
+        System.out.println(c); // c.toString()과 같음
+        Circle c2 = new Circle();
+        System.out.println(c2.toString()); // JAVA.ch7.Circle@72ea2f77
     }
 }
