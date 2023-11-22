@@ -14,9 +14,11 @@ public class Exercise10_5 {
             int day2 = Integer.parseInt(yyyymmdd2.substring(6, 8));
             Calendar date1 = Calendar.getInstance();
             Calendar date2 = Calendar.getInstance();
+            date1.clear(); // clear를 하지 않고 set을 하면 미세한 차이가 발생해서 의도하지 않은 값이 나올 수 있다.
+            date2.clear();
             date1.set(year1, month1, day1);
             date2.set(year2, month2, day2);
-            diff = (int) (date1.getTimeInMillis() - date2.getTimeInMillis());
+            diff = (int) (date1.getTimeInMillis() - date2.getTimeInMillis())  / (24 * 60 * 60 * 1000);
         } catch (Exception e) {
             diff = 0; // substring(), parseInt()에서 예외가 발생하면 0을 반환한다.
         }
@@ -26,6 +28,6 @@ public class Exercise10_5 {
     public static void main(String[] args) {
         System.out.println(getDayDiff("20010103", "20010101"));
         System.out.println(getDayDiff("20010103", "20010103"));
-                System.out.println(getDayDiff("20010103", "200103"));
+        System.out.println(getDayDiff("20010103", "200103"));
     }
 }
