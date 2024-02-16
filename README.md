@@ -2,7 +2,7 @@
 
 #### [자바의 정석 - 기초편] (https://www.youtube.com/playlist?list=PLW2UjW795-f6xWA2_MUhEVgPauhGl3xIp)
 
-170 / 171
+171 / 171 - 완료
 
 ## 
 <details>
